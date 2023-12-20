@@ -1,0 +1,32 @@
+<h1>Hello World, This is my first web page...</h1>
+
+<h5>Is this cool?</h5>
+
+
+<h4>My first name is.... : {{ firstname }}</h4>
+
+
+<p>{{stuff | striptags}}</p>
+
+
+<p>{{ favourite_fruits }}</p>
+
+
+{%  for topping in  favourite_fruits  %}
+
+	{% if topping==43 %}
+		{{ topping + 10 }}
+	{% else %}
+		{{topping}} <br>
+	{% endif %}
+
+{% endfor  %}
+
+
+<br>
+<br>
+
+
+{{ favourite_fruits.0 }}
+<br>
+{{ favourite_fruits.1 }}
